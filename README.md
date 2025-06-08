@@ -53,8 +53,8 @@ npm run build
 ```
 
 ##🚀 Live Demo
-# CondSandbox: https://codesandbox.io/p/github/Waseem10Git/skip-selection-ui-redesign/main?import=true
-# Netifly: https://skip-selection.netlify.app/
+1. CondSandbox: https://codesandbox.io/p/github/Waseem10Git/skip-selection-ui-redesign/main?import=true
+2. Netifly: https://skip-selection.netlify.app/
 
 ✍️ Author
 Wasim Mahmoud Ghabour
