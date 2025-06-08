@@ -1,0 +1,221 @@
+.skip-card {
+    background: white;
+    border-radius: 20px;
+    padding: 2rem;
+    cursor: pointer;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    border: 3px solid transparent;
+    position: relative;
+    overflow: hidden;
+}
+
+.skip-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.4), transparent);
+    transition: left 0.5s;
+}
+
+.skip-card:hover::before {
+    left: 100%;
+}
+    
+.skip-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+}
+
+.skip-card.selected {
+    border-color: #3b82f6;
+    transform: translateY(-8px);
+    box-shadow: 0 20px 40px rgba(59, 130, 246, 0.3);
+}
+
+.skip-card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1.5rem;
+}
+
+.capacity-badge {
+    background: linear-gradient(135deg, #f3f4f6, #e5e7eb);
+    color: #374151;
+    padding: 0.5rem 1rem;
+    border-radius: 50px;
+    font-weight: 600;
+    font-size: 0.9rem;
+}
+
+.capacity-badge.selected {
+    background: linear-gradient(135deg, #3b82f6, #1d4ed8);
+    color: white;
+}
+
+.selected-indicator {
+    background: #22c55e;
+    color: white;
+    border-radius: 50%;
+    width: 36px;
+    height: 36px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    animation: scaleIn 0.3s ease;
+}
+
+@keyframes scaleIn {
+    from {
+        transform: scale(0);
+    }
+    to {
+        transform: scale(1);
+    }
+}
+
+.features-badges {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-bottom: 1rem;
+    min-height: 2rem;
+}
+
+.feature-badge {
+    background: #f3f4f6;
+    color: #374151;
+    padding: 0.25rem 0.75rem;
+    border-radius: 20px;
+    font-size: 0.75rem;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    gap: 0.25rem;
+}
+
+.feature-badge.road-allowed {
+    background: #dcfce7;
+    color: #166534;
+}
+
+.feature-badge.heavy-waste {
+    background: #fef3c7;
+    color: #92400e;
+}
+
+.feature-badge.transport {
+    background: #e0e7ff;
+    color: #3730a3;
+}
+
+.feature-badge span {
+    font-weight: 700;
+}
+
+.transport-info {
+    color: #6b7280;
+    font-size: 0.8rem;
+    margin-bottom: 1rem;
+    font-style: italic;
+}
+
+.price-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.skip-image {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2rem;
+}
+
+.skip-container {
+    position: relative;
+    width: 120px;
+    height: 80px;
+}
+
+.skip-body {
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(135deg, #fbbf24, #f59e0b);
+    border-radius: 8px 8px 4px 4px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+
+.skip-body::before {
+    content: '';
+    position: absolute;
+    top: -8px;
+    left: 10%;
+    right: 10%;
+    height: 8px;
+    background: #f59e0b;
+    border-radius: 4px 4px 0 0;
+}
+
+.skip-logo {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-weight: bold;
+    font-size: 1.2rem;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+.skip-details {
+    text-align: center;
+}
+
+.skip-name {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #1f2937;
+    margin-bottom: 0.5rem;
+}
+
+.skip-period {
+    color: #6b7280;
+    font-size: 0.9rem;
+    margin-bottom: 1rem;
+}
+
+.skip-description {
+    color: #4b5563;
+    line-height: 1.5;
+    margin-bottom: 0.75rem;
+}
+
+.skip-price {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #1f2937;
+    background: linear-gradient(135deg, #f3f4f6, #e5e7eb);
+    padding: 0.75rem;
+    border-radius: 12px;
+    display: inline-block;
+    min-width: 100px;
+}
+
+@media (max-width: 768px) {
+  .skip-card {
+    padding: 1.5rem;
+  }
+}
+  
+@media (max-width: 480px) {  
+  .skip-card {
+    padding: 1rem;
+  }
+}
