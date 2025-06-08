@@ -11,17 +11,29 @@ This is a redesign of the **"Choose Your Skip Size"** page for the WeWantWaste w
 ## 📁 Folder Structure
 
 src/
+
 components/
+
 ├── ErrorMessage/
+
 ├── Loading/
+
 ├── MainContent/
+
 ├── Navigation/
+
 ├── ProgressIndicator/
+
 ├── SelectedSkip/
+
 └── SkipCard/
+
 App.jsx
+
 App.css
+
 index.css
+
 main.jsx
 
 ## Local Development
