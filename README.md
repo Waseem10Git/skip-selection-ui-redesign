@@ -1,13 +1,71 @@
-# React + Vite
+# WeWantWaste Skip Selection Page - React UI Redesign
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is a redesign of the **"Choose Your Skip Size"** page for the WeWantWaste website, implemented in React using Vite.
 
-Currently, two official plugins are available:
+## 🔧 Tech Stack
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- React (with Vite)
+- CSS (Responsive, Mobile-first)
+- Fetching skip data from: [`https://app.wewantwaste.co.uk/api/skips/by-location?postcode=NR32&area=Lowestoft`](https://app.wewantwaste.co.uk/api/skips/by-location?postcode=NR32&area=Lowestoft)
 
-## Expanding the ESLint configuration
+## 🖼️ UI Enhancements
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
-# skip-selection-ui-redesign
+- **Horizontal progress bar** at the top to show booking steps (responsive)
+- **Modern card layout** for skip sizes (flexible and styled)
+- **Footer bar appears** only when a skip is selected, with skip info and navigation buttons
+- **Responsive design** for both desktop and mobile
+- **Clean structure**, maintainable components
+
+## 📁 Folder Structure
+
+src/
+  components/
+  ErrorMessage/
+    ErrorMessage.jsx
+    ErrorMessage.css
+  Loading/
+    Loading.jsx
+    Loading.css
+  MainContent/
+    MainContent.jsx
+    MainContent.css
+  Navigation/
+    Navigation.jsx
+    Navigation.css
+  ProgressIndicator/
+    ProgressIndicator.jsx
+    ProgressIndicator.css
+  SelectedSkip/
+    SelectedSkip.jsx
+    SelectedSkip.css
+  SkipCard/
+    SkipCard.jsx
+    SkipCard.css
+  App.jsx
+  App.css
+  index.css
+  main.jsx
+
+## Local Development
+
+1. Clone the repository:
+```bash
+git clone https://github.com/Waseem10Git/skip-selection-ui-redesign
+```
+
+2. Install dependencies
+```
+npm install
+```
+3. Run the app
+```
+npm run build
+```
+
+##🚀 Live Demo
+CondSandbox: https://codesandbox.io/p/github/Waseem10Git/skip-selection-ui-redesign/main?import=true
+Netifly: https://skip-selection.netlify.app/
+
+✍️ Author
+Wasim Mahmoud Ghabour
+GitHub: https://github.com/Waseem10Git
